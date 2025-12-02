@@ -11,11 +11,28 @@ body {
     scroll-behavior: smooth;
 }
 
+:root {
+    --page-bg: rgba(240, 240, 246, 1);
+    --btn-bg: rgba(255, 180, 0, 1);
+}
+
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #111111;
-    background-color: rgba(240, 240, 246, 1);
+    background-color: var(--page-bg);
 }
+
+
+
+.menu-link:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--btn-bg);
+    outline-offset: 2px;
+}
+
 
 .container {
     width: 100%;
@@ -80,7 +97,7 @@ body {
 
 .menu ul li a.active,
 .menu ul li a:hover {
-    background: rgba(255, 180, 0, 1);
+    background: var(--btn-bg);
     border-radius: 5px;
     color: #000;
     padding: 10px 10px;
@@ -92,16 +109,17 @@ body {
 
 /* css for hero */
 
-.hero_inner,
+.header,
+.hero,
 .recommendations,
-.contact {
-  max-width: 1440px;
-  margin: 0 auto;
+.contact,
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero {
-    height: 630px;
-    width: 100%;
+    min-height: 630px;
     padding: 110px 0;
     position: relative;
     background: rgba(255, 255, 255, 1);
@@ -126,7 +144,7 @@ body {
     width: 721px;
     font-size: 48px;
     margin: 0;
-    line-height: 123.6%;
+    line-height: 1.25;
 }
 
 .hero-title-line {
@@ -134,7 +152,7 @@ body {
 }
 
 .highlight {
-    color: rgba(255, 180, 0, 1);
+    color: var(--btn-bg);
 }
 
 .hero-subtitle {
@@ -153,7 +171,7 @@ body {
 .hire_btn {
     height: 51px;
     width: 154px;
-    background: rgba(255, 180, 0, 1);
+    background: var(--btn-bg);
     border: none;
     border-radius: 5%;
     display: flex;
@@ -163,12 +181,10 @@ body {
 
 }
 
-.hire_btn h1 {
+.hire_btn span {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
 }
 
 .illustration {
@@ -223,10 +239,11 @@ body {
 /* css for projects */
 
 .projects {
-    height: 1055px;
+    /* height: 1055px; */
+    padding: 60px 97px;
     width: 1244px;
-    margin: 60px 97px;
-    padding: 0;
+    margin: 0 97px;
+    /* padding: 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,7 +276,7 @@ body {
     margin-top: 33px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 45px;
 }
 
 .card {
@@ -338,7 +355,8 @@ body {
 /* css  */
 
 .recommendations {
-    height: 520px;
+    /* height: 520px; */
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,18 +392,16 @@ body {
     height: 327px;
 }
 
-.carousel-slide {
+.carousel-track {
     display: flex;
     width: 1245px;
     height: 327px;
     gap: 25px;
     overflow: scroll;
     scrollbar-width: none;
-}
-
-.carousel-track {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .testimonial {
@@ -483,11 +499,11 @@ body {
 }
 
 .contact {
-    height: 760px;
+    /* height: 760px; */
+    padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .contact-grid {
@@ -543,7 +559,7 @@ body {
 
 .contact-card-content p {
     font-size: 15px;
-    color: rgba(118, 118, 118, 1);
+    color: rgba(118, 118, 118, 0.77);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -630,11 +646,11 @@ body {
 
 /* footer */
 .footer {
-    height: 661px;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;
 }
 
 .footer_inner {
@@ -643,16 +659,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 45px;
-}
-
-.footer_logo {
-    margin-top: 45px;
-}
-
-.footer_copy {
-    height: 56px;
-    width: 283px;
-    margin: 0;
 }
 
 .footer-left-bottom {
@@ -812,17 +818,17 @@ body {
 
 .footer_copy {
     padding: 0;
-    margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: rgba(118, 118, 118, 1);
+    font-size: 15px;
 }
 
 .page {
-  max-width: 1440px;      
-  margin: 0 auto;         
-  background: #f0f0f7;   
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--page-bg);
 }
