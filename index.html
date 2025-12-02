@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- Header Section  -->
+    <div class="page">
+            <!-- Header Section  -->
     <header class="header">
         <div class="container inner_header">
             <a href="#home" class="headerLogo">
@@ -242,9 +243,9 @@
         </section>
 
         <!-- recommendations section  -->
-        <section id="recommendations" class="recommendations">
-            <div class="container">
-                <header class="rec_section-header">
+        <section id="recommendations">
+            <div class="container recommendations">
+                <header class="rec_section_header">
                     <h2 id="rec-title" class="section-title">Recommendations</h2>
                     <p class="section-subtitle">
                         Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do
@@ -255,38 +256,127 @@
 
                 <!-- carousel  -->
                 <div class="carousel">
-                    <button type="button" class="carousel-btn prev">‹</button>
+                    <!-- <button type="button" class="carousel-btn prev">‹</button> -->
                     <div class="carousel-track-container">
                         <ul class="carousel-track">
                             <li class="carousel-slide">
                                 <article class="testimonial">
-                                    <div class="testimonial-stars">★★★★★</div>
-                                    <h3 class="testimonial-title">Great Quality!</h3>
-
-                                    <p class="testimonial-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vitae nulla diam In ac dictum A urna viverra Morbi.
+                                    <div class="ratings">
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                    </div>
+                                    <h4 class="testimonial-title">Great Quality!</h4>
+                                    <p class="testimonial-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac
+                                        dictum a urna viverra morbi. Morbi donec amet....
                                     </p>
-
                                     <div class="testimonial-author">
                                         <img src="assets/user1.png" alt="James Gouse photo" />
-                                        <div>
-                                            <p class="author-name">James Gouse</p>
+                                        <div class="author">
+                                            <h4 class="author-name">James Gouse</h4>
                                             <p class="author-role">Graphic Designer</p>
                                         </div>
                                     </div>
                                 </article>
-                            </li>
+                                <article class="testimonial">
+                                    <div class="ratings">
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                    </div>
+                                    <h4 class="testimonial-title">Amazing work!</h4>
+                                    <p class="testimonial-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac
+                                        dictum a urna viverra morbi. Morbi donec amet....
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="assets/user2.png" alt="James Gouse photo" />
+                                        <div class="author">
+                                            <h4 class="author-name">Tiana Philips</h4>
+                                            <p class="author-role">Photographer</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="testimonial">
+                                    <div class="ratings">
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                    </div>
+                                    <h4 class="testimonial-title">Great Quality!</h4>
+                                    <p class="testimonial-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac
+                                        dictum a urna viverra morbi. Morbi donec amet....
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="assets/user3.png" alt="James Gouse photo" />
+                                        <div class="author">
+                                            <h4 class="author-name">Talan Westervelt</h4>
+                                            <p class="author-role">Business man</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="testimonial">
+                                    <div class="ratings">
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                    </div>
+                                    <h4 class="testimonial-title">Great Quality!</h4>
+                                    <p class="testimonial-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac
+                                        dictum a urna viverra morbi. Morbi donec amet....
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="assets/user1.png" alt="James Gouse photo" />
+                                        <div class="author">
+                                            <h4 class="author-name">James Gouse</h4>
+                                            <p class="author-role">Graphic Designer</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="testimonial">
+                                    <div class="ratings">
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                        <div class="star-icon"><img src="assets/Star.svg" alt=""></div>
+                                    </div>
+                                    <h4 class="testimonial-title">Amazing work!</h4>
+                                    <p class="testimonial-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac
+                                        dictum a urna viverra morbi. Morbi donec amet....
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="assets/user2.png" alt="James Gouse photo" />
+                                        <div class="author">
+                                            <h4 class="author-name">Tiana Philips</h4>
+                                            <p class="author-role">Photographer</p>
+                                        </div>
+                                    </div>
+                                </article>
 
-                            <!-- other testimonial slides -->
+                            </li>
                         </ul>
                     </div>
 
-                    <button type="button" class="carousel-btn next">›</button>
+                    <!-- <button type="button" class="carousel-btn next">›</button> -->
                     <div class="carousel-indicators">
-                        <button type="button" class="dot active"></button>
-                        <button type="button" class="dot"></button>
-                        <button type="button" class="dot"></button>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
                     </div>
                 </div>
             </div>
@@ -296,56 +386,66 @@
         <section id="contact" class="contact">
             <div class="container contact-grid">
                 <div class="contact-form-container">
-                    <h2 id="contact-title" class="section-title">Leave ME Your Info</h2>
-                    <form class="contact-form" id="contact-form" novalidate>
-                        <label>
-                            Your Full Name (Required)
-                            <input type="text" name="fullName" required />
-                        </label>
-                        <label>
-                            Your Email (Required)
-                            <input type="email" name="email" required />
-                        </label>
+                    <h2 class="contact_title">Leave ME Your Info</h2>
+                    <form>
+                        <div class="form_group">
+                            <label>Your Full Name ( Required )</label>
+                            <input type="text" />
+                        </div>
 
-                        <label>
-                            Subject
-                            <input type="text" name="subject" />
-                        </label>
+                        <div class="form_group">
+                            <label>Your Email ( Required )</label>
+                            <input type="email" />
+                        </div>
 
-                        <label>
-                            Your Message
-                            <textarea name="message" rows="5"></textarea>
-                        </label>
+                        <div class="form_group">
+                            <label>Subject</label>
+                            <input type="text" />
+                        </div>
 
-                        <button type="submit" class="btn btn-yellow">Send Message</button>
+                        <div class="form_group">
+                            <label>Your Message</label>
+                            <textarea></textarea>
+                        </div>
+
+                        <button type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
 
                 <aside class="contact-info">
-                    <div class="contact-card">
-                        <img src="assets/location.svg" alt="loc" />
-                        <div>
-                            <p><strong>Country:</strong> India</p>
-                            <p><strong>City:</strong> Gautam Buddha Nagar</p>
-                            <p><strong>Street:</strong> Sector 62, Noida</p>
+                    <h1 class="section-title">Contact information</h1>
+                    <div class="info-cards">
+                        <div class="contact-card location">
+                            <div class="contact-card-image">
+                                <img src="assets/location.svg" alt="loc" />
+                            </div>
+                            <div class="contact-card-content">
+                                <p><strong>Country:</strong> India</p>
+                                <p><strong>City:</strong> Gautam Buddha Nagar</p>
+                                <p><strong>Street:</strong> Sector 62, Noida</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contact-card">
-                        <img src="assets/mail.svg" alt="mail" />
-                        <div>
-                            <p><strong>Email:</strong> youremail@gmail.com</p>
-                            <p><strong>Skype:</strong> @yourusername</p>
-                            <p><strong>Telegram:</strong> @yourusername</p>
+                        <div class="contact-card location">
+                            <div class="contact-card-image">
+                                <img src="assets/location.svg" alt="loc" />
+                            </div>
+                            <div class="contact-card-content">
+                                <p><strong>Country:</strong> India</p>
+                                <p><strong>City:</strong> Gautam Buddha Nagar</p>
+                                <p><strong>Street:</strong> Sector 62, Noida</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contact-card">
-                        <img src="assets/phone.svg" alt="phone" />
-                        <div>
-                            <p><strong>Support Services:</strong> 15369</p>
-                            <p><strong>Office:</strong> +58 (021)356 587 235</p>
-                            <p><strong>Personal:</strong> +58 (021)356 587 235</p>
+                        <div class="contact-card location">
+                            <div class="contact-card-image">
+                                <img src="assets/location.svg" alt="loc" />
+                            </div>
+                            <div class="contact-card-content">
+                                <p><strong>Country:</strong> India</p>
+                                <p><strong>City:</strong> Gautam Buddha Nagar</p>
+                                <p><strong>Street:</strong> Sector 62, Noida</p>
+                            </div>
                         </div>
                     </div>
                 </aside>
@@ -355,11 +455,19 @@
 
     <!-- Footer Section  -->
     <footer class="footer">
+        <div class="footer-logos">
+            <div class="footer_logo"><img src="assets/footerlogo1.svg" alt=""></div>
+            <div class="footer_logo"><img src="assets/footerlogo2.svg" alt=""></div>
+            <div class="footer_logo"><img src="assets/footerlogo3.svg" alt=""></div>
+            <div class="footer_logo"><img src="assets/footerlogo4.svg" alt=""></div>
+        </div>
         <div class="container footer_inner">
-            <div>
+            <div class="footer_logo">
                 <a href="#home" class="footer_logo">
                     <img src="assets/logo.png" alt="Portfolio Logo" />
                 </a>
+            </div>
+            <div class="footer-left-bottom">
                 <div class="plateforms_rating">
                     <div class="img_links">
                         <img src="assets/plateform1.png" alt="lorem logo" />
@@ -374,59 +482,41 @@
                         <p>4.5/5 Rating on dorel</p>
                     </div>
                 </div>
-            </div>
-            <div class="footer-left_sections">
-                <div class="footer_links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#recommendations">Recommendations</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_portfolio">
-                    <h3>Portfolio</h3>
-                    <ul>
-                        <li>Frontend Development</li>
-                        <li>Backend Development</li>
-                        <li>Website Design</li>
-                        <li>Machine Learning</li>
-                        <li>Problem Solving & DSA</li>
-                    </ul>
-                </div>
-
-                <div class="footer_connect">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ul>
+                <div class="inner_footer_left">
+                    <div class="footer_links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#recommendations">Recommendations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_portfolio">
+                        <h3>Portfolio</h3>
+                        <ul>
+                            <li>Frontend Development</li>
+                            <li>Backend Development</li>
+                            <li>Website Design</li>
+                            <li>Machine Learning</li>
+                            <li>Problem Solving & DSA</li>
+                        </ul>
+                    </div>
+                    <div class="footer_connect">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/"><img src="assets/LinkedIn.svg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/"><img src="assets/Instagram.svg" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
-
         <p class="footer_copy">© 2024 Copyright, All Right Reserved</p>
     </footer>
-
-    <!-- modal -->
-    <div class="modal" id="project-modal">
-        <div class="modal-overlay"></div>
-
-        <div class="modal-content">
-            <button type="button" class="modal-close">×</button>
-            <h2 class="modal-title">Project Title</h2>
-            <p class="modal-des">Detailed information about the project...</p>
-
-            <ul class="modal-tags">
-                <li class="tag">ReactJs</li>
-                <li class="tag">NextJs</li>
-                <li class="tag">Typescript</li>
-            </ul>
-        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
